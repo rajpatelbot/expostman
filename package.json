@@ -1,12 +1,23 @@
 {
-  "name": "expostman",
-  "version": "1.0.0",
-  "description": "A CLI tool to generate postman collection from express app.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "name": "expostman",
+    "version": "0.0.0",
+    "description": "A CLI tool to generate postman collection from express app.",
+    "main": "src/index.ts",
+    "scripts": {
+        "watch": "tsup --watch",
+        "build": "tsup",
+        "format": "prettier --write ."
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "prettier": "^3.6.2",
+        "terser": "^5.44.0",
+        "tsup": "^8.5.0",
+        "typescript": "^5.9.3"
+    },
+    "dependencies": {
+        "commander": "^14.0.1"
+    }
 }
