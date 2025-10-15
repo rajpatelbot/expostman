@@ -1,7 +1,7 @@
 import { defineConfig } from 'tsup';
 
 export default defineConfig({
-    entry: ['src/index.ts'],
+    entry: ['bin/cli.ts'],
     splitting: true,
     sourcemap: true,
     clean: true,
@@ -15,4 +15,7 @@ export default defineConfig({
     jsxFragment: 'React.Fragment',
     metafile: true,
     tsconfig: './tsconfig.json',
+    banner: {
+        js: '#!/usr/bin/env node',
+    },
 });

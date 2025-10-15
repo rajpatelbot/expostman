@@ -1,15 +1,25 @@
 {
     "name": "expostman",
-    "version": "0.0.0",
+    "version": "1.0.0",
     "description": "A CLI tool to generate postman collection from express app.",
-    "main": "src/index.ts",
+    "type": "module",
+    "main": "dist/cli.js",
+    "bin": {
+        "expostman": "./dist/cli.js"
+    },
     "scripts": {
-        "watch": "tsup --watch",
+        "dev": "tsup --watch",
         "build": "tsup",
         "format": "prettier --write ."
     },
-    "keywords": [],
-    "author": "",
+    "keywords": [
+        "cli",
+        "express",
+        "postman",
+        "collection",
+        "generator"
+    ],
+    "author": "Raj Patel",
     "license": "ISC",
     "devDependencies": {
         "prettier": "^3.6.2",
